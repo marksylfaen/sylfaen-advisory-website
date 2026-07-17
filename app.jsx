@@ -8,7 +8,7 @@ function Nav() {
     <header className="nav">
       <div className="wrap nav-inner">
         <a href="#top" className="wordmark">
-          <img src="assets/sylfaen-mark.svg" alt="" className="mark-svg" />
+          <img src="assets/sylfaen-logo-mark.png" alt="" className="mark-svg" />
           <span className="label">
             <span>Sylfaen Advisory</span>
             <span className="sub">Construction Assurance</span>
@@ -299,20 +299,27 @@ function AwenSection() {
           </div>
           <p className="section-sub" style={{ marginTop: -40, marginBottom: 16, marginLeft: 'auto', maxWidth: '64ch' }}>
             Awen is our internal data assurance platform, purpose-built for ISO 19650
-            engagements. Below is a live sample workspace — pick a document type, then
-            select a section and generate ISO 19650-compliant content from the project profile.
+            engagements. It's the tooling behind every engagement we deliver — from
+            Health Check diagnostics through to retained monitoring.
           </p>
-          <AwenDashboard />
+          <div className="awen-gate-wrap">
+            <div className="awen-gate-frame"><AwenDashboard /></div>
+            <div className="awen-gate-overlay">
+              <span className="awen-gate-eyebrow">Sample workspace preview</span>
+              <p className="awen-gate-copy">Request a live walkthrough and we'll show you Awen working against a sample project profile, tailored to your sector.</p>
+              <a href="#contact" className="awen-gate-cta" onClick={() => window.dispatchEvent(new CustomEvent('sylfaen:preselect', { detail: 'Awen demo' }))}>Request a demo →</a>
+            </div>
+          </div>
           <div style={{ marginTop: 32, paddingTop: 24, borderTop: '1px solid rgba(241,237,227,0.08)', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, color: 'rgba(241,237,227,0.7)' }} className="awen-features">
             <div>
               <div style={{ fontFamily: 'var(--mono)', fontSize: 10.5, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(241,237,227,0.4)', marginBottom: 10 }}>i. Document generation</div>
               <div style={{ fontFamily: 'var(--serif)', fontSize: 18, color: 'var(--bg)', fontWeight: 380, lineHeight: 1.3, marginBottom: 8 }}>Author the standard, don't just audit it</div>
-              <p style={{ fontSize: 13, lineHeight: 1.55 }}>BEPs, EIRs, employer's information requirements, gap analyses and remediation notes — generated at pace from live project data, with every claim traceable back to a source artefact. The platform produces compliant first drafts; we govern their quality.</p>
+              <p style={{ fontSize: 13, lineHeight: 1.55 }}>BEPs, EIRs, employer's information requirements, gap analyses and remediation notes — produced at pace, evidence-backed, and checked by us before they reach you. The platform drafts; we govern quality.</p>
             </div>
             <div>
               <div style={{ fontFamily: 'var(--mono)', fontSize: 10.5, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(241,237,227,0.4)', marginBottom: 10 }}>ii. Compliance enforcement</div>
               <div style={{ fontFamily: 'var(--serif)', fontSize: 18, color: 'var(--bg)', fontWeight: 380, lineHeight: 1.3, marginBottom: 8 }}>At the CDE boundary, not after</div>
-              <p style={{ fontSize: 13, lineHeight: 1.55 }}>Naming conventions, container codes and metadata fields validated on upload — bad data is rejected before it pollutes the workspace.</p>
+              <p style={{ fontSize: 13, lineHeight: 1.55 }}>Non-compliant data doesn't make it into the workspace in the first place — problems are caught at the point of entry, not discovered downstream.</p>
             </div>
             <div>
               <div style={{ fontFamily: 'var(--mono)', fontSize: 10.5, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(241,237,227,0.4)', marginBottom: 10 }}>iii. Engagement dashboards</div>
@@ -346,7 +353,7 @@ function Credentials() {
             <p className="cred-body">
               Every engagement is led by a practitioner with primary platform
               experience — including co-development of BCDE at Bentley Systems and
-              delivery on schemes spanning rail, energy, and public estate.
+              delivery on schemes spanning health, infrastructure, and housebuilding.
             </p>
             <ul className="cred-list">
               <li>Bentley BCDE</li><li>ProjectWise</li><li>Viewpoint</li><li>Asite</li><li>Autodesk Docs</li><li>Dalux</li>
@@ -399,6 +406,12 @@ function Contact() {
   const [error, setError] = useState(null);
 
   const refId = "SYL-" + Math.random().toString(36).slice(2, 7).toUpperCase();
+
+  useEffect(() => {
+    const onPreselect = (e) => { if (e.detail) setChosen(e.detail); };
+    window.addEventListener('sylfaen:preselect', onPreselect);
+    return () => window.removeEventListener('sylfaen:preselect', onPreselect);
+  }, []);
 
   const submit = async (e) => {
     e.preventDefault();
@@ -455,8 +468,8 @@ function Contact() {
                 <span className="principal-name">Mark Biscoe</span>
                 <span className="principal-role">Principal · Engagement lead</span>
                 <span className="principal-bio">
-                  Fifteen years' CDE delivery across rail, energy and public
-                  estate — including co-development of BCDE at Bentley Systems.
+                  Fifteen years' CDE delivery across health, infrastructure and
+                  housebuilding — including co-development of BCDE at Bentley Systems.
                   ISO 19650-native practitioner.
                 </span>
               </div>

@@ -43,7 +43,7 @@ const I = {
 function AwenMark({ size = 26 }) {
   return (
     <svg viewBox="0 0 64 68" width={size} className="awn-rail-logo" aria-label="Awen">
-      <polygon points="18,0 30,0 44,58 4,58" fill="#0c6d75" />
+      <polygon points="18,0 30,0 44,58 4,58" fill="#006d75" />
       <polygon points="34,0 46,0 54,58 38,58" fill="#2db8bf" />
       <polygon points="50,0 62,0 62,58 58,58" fill="#8fafc0" />
       <rect x="2" y="61" width="62" height="2.5" fill="#2db8bf" />
