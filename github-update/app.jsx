@@ -360,6 +360,23 @@ function Credentials() {
             <ul className="cred-list">
               <li>Bentley BCDE</li><li>ProjectWise</li><li>Viewpoint</li><li>Asite</li><li>Autodesk Docs</li><li>Dalux</li>
             </ul>
+            <ul className="badge-list">
+              <li><a href="https://www.credly.com/earner/earned/badge/f9be8f3e-612c-4bff-9e49-f906cb79a92f" target="_blank" rel="noopener">
+                <span className="badge-name">Bentley Accredited BCDE Information Provider</span>
+                <span className="badge-issuer">Bentley Systems</span>
+                <span className="badge-verify">Verify ↗</span>
+              </a></li>
+              <li><a href="https://www.credly.com/earner/earned/badge/29a44522-9a6b-47f7-b0e2-7b9d5d53bf82" target="_blank" rel="noopener">
+                <span className="badge-name">Bentley Accredited BCDE Project Administrator</span>
+                <span className="badge-issuer">Bentley Systems</span>
+                <span className="badge-verify">Verify ↗</span>
+              </a></li>
+              <li><a href="https://www.credly.com/earner/earned/badge/0c527c60-4a76-410f-a95e-e82c2628ba15" target="_blank" rel="noopener">
+                <span className="badge-name">Information Management Practitioner (ISO 19650)</span>
+                <span className="badge-issuer">Operam Academy</span>
+                <span className="badge-verify">Verify ↗</span>
+              </a></li>
+            </ul>
           </div>
 
           <div className="cred">
