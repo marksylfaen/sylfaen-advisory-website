@@ -1783,16 +1783,15 @@ button {
 
 .badge-list { list-style: none; margin: 16px 0 0; padding: 12px 0 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid rgba(12,94,118,0.15); }
 .badge-list a {
-  display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
-  text-decoration: none; padding: 6px 8px; margin: 0 -8px; border-radius: 4px;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 3px;
+  text-decoration: none; padding: 8px 8px; margin: 0 -8px; border-radius: 4px;
   transition: background 150ms ease;
 }
 .badge-list a:hover { background: rgba(58,154,166,0.08); }
 .badge-list a:hover .badge-verify { color: #3A9AA6; }
-.badge-name { font-size: 12.5px; font-weight: 600; color: #0C5E76; }
+.badge-name { font-size: 12.5px; font-weight: 600; color: #0C5E76; line-height: 1.35; }
 .badge-issuer { font-size: 11.5px; color: var(--slate); }
-.badge-issuer::before { content: "— "; }
-.badge-verify { font-size: 11px; font-weight: 600; color: #0C5E76; margin-left: auto; letter-spacing: 0.02em; }
+.badge-verify { font-size: 11px; font-weight: 600; color: #0C5E76; letter-spacing: 0.02em; }
 
 .credentials {
   display: grid;
