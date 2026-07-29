@@ -637,6 +637,7 @@ function Footer() {
               <li><a href="#contact">Engagement enquiry</a></li>
               <li><a href="#contact">Book introduction</a></li>
               <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="ethical-employment-policy.html">Ethical Employment Policy</a></li>
             </ul>
           </div>
         </div>
