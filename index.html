@@ -13,7 +13,276 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- Static fallback content: rendered for crawlers and no-JS visitors, then
+         silently replaced by the React app once it mounts. Keep in sync with
+         app.jsx if hero/practice/engagement copy changes. -->
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a href="#top" class="wordmark">
+          <img src="assets/sylfaen-logo-mark.png" alt="" class="mark-svg" />
+          <span class="label">
+            <span>Sylfaen Advisory</span>
+            <span class="sub">Construction Assurance</span>
+          </span>
+        </a>
+        <nav class="nav-links">
+          <a href="#practice"><span class="num">01</span>Practice</a>
+          <a href="#engagements"><span class="num">02</span>Engagements</a>
+          <a href="#awen"><span class="num">03</span>Awen</a>
+          <a href="#credentials"><span class="num">04</span>Credentials</a>
+          <a href="#contact"><span class="num">05</span>Contact</a>
+        </nav>
+        <div class="nav-status">
+          <span class="dot"></span>
+          Accepting Q3 &rsquo;26
+        </div>
+      </div>
+    </header>
+
+    <section class="section hero" id="top">
+      <div class="wrap">
+        <div class="hero-eyebrow">
+          <span>A boutique consultancy &middot; Wales, UK</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Information<br />
+          management,<br />
+          <em>done properly.</em>
+        </h1>
+
+        <div class="hero-grid">
+          <div>
+            <p class="hero-lead">
+              We are a specialist practice for the UK construction sector &mdash; building
+              <strong>CDE environments</strong>, authoring <strong>ISO 19650</strong>
+              frameworks, and bringing measurable assurance to data that, until
+              now, has been treated as filing.
+            </p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn btn-primary">Start a conversation &rarr;</a>
+              <a href="#engagements" class="btn btn-ghost">Engagement model &rarr;</a>
+            </div>
+          </div>
+          <aside class="hero-meta">
+            <div class="row"><span class="k">Established</span><span class="v">2026 &middot; Wales</span></div>
+            <div class="row"><span class="k">Engagement lead</span><span class="v">Mark Biscoe</span></div>
+            <div class="row"><span class="k">Sector focus</span><span class="v">Tier 1 contractors &middot; Asset owners &middot; Consultancies &middot; Chartered practices</span></div>
+            <div class="row"><span class="k">Standards</span><span class="v">ISO 19650 &middot; BS 1192 &middot; BSA Golden Thread</span></div>
+          </aside>
+        </div>
+
+        <div class="hero-strip">
+          <span class="hero-strip-label">Practice at a glance</span>
+          <div class="hero-strip-content">
+            <span class="hero-strip-item"><span class="v">15+</span><span class="k">Years CDE</span></span>
+            <span class="hero-strip-item"><span class="v">6</span><span class="k">Platforms</span></span>
+            <span class="hero-strip-item"><span class="v">14d</span><span class="k">Health check</span></span>
+            <span class="hero-strip-item"><span class="v">&pound;2.5&ndash;25k</span><span class="k">Engagements</span></span>
+          </div>
+          <span class="hero-strip-label" style="text-align:right">2026 &middot; Q3</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-rule" id="practice">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow"><span class="num">01</span>Practice</div>
+          <h2 class="section-title">A small practice for a discipline that <em>rewards depth, not breadth.</em></h2>
+        </div>
+        <div class="practice-body">
+          <p class="lead">
+            Sylfaen Advisory exists because information management on UK
+            construction projects is, with regrettable consistency, an
+            afterthought &mdash; outsourced to template libraries, retrofitted into
+            CDE platforms purchased for other reasons, and audited only when
+            something has already gone wrong.
+          </p>
+          <p>
+            We work in the opposite direction. ISO 19650 is not a wrapper we
+            apply at the end of a project; it is the foundation we begin from.
+            Our engagements are deliberately compact &mdash; diagnostics measured
+            in weeks, implementations measured in months &mdash; because depth of
+            expertise is what produces results, not breadth of staffing.
+          </p>
+          <p>
+            The practice serves three audiences without diluting any of them:
+            Tier 1 contractors needing assured information pipelines, asset
+            owners building Golden Thread compliance, and mid-size
+            consultancies retaining fractional information management.
+          </p>
+          <div class="practice-stats">
+            <div class="practice-stat"><div class="v">15<span class="suffix">+ yrs</span></div><div class="k">CDE delivery experience, including co-development of BCDE at Bentley Systems</div></div>
+            <div class="practice-stat"><div class="v">6</div><div class="k">Major platforms covered &mdash; Asite, Autodesk Docs, Dalux, ProjectWise, Viewpoint, BCDE</div></div>
+            <div class="practice-stat"><div class="v">14<span class="suffix">d</span></div><div class="k">Standard Health Check turnaround, from kick-off to remediation roadmap</div></div>
+            <div class="practice-stat"><div class="v">73<span class="suffix">%</span></div><div class="k">Median compliance uplift on sample engagements, baseline to 90 days</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="engagements">
+      <div class="engagements">
+        <div class="engagements-wrap">
+          <div class="section-head">
+            <div class="eyebrow"><span class="num">02</span>Engagements</div>
+            <h2 class="section-title">Ways to engage &mdash; <em>each priced openly,</em> each scoped to remove the usual friction.</h2>
+          </div>
+          <div class="tiers">
+            <a href="#contact" class="tier">
+              <div class="tier-num">I</div>
+              <div><div class="tier-tag">Fixed fee &middot; 14 business days</div><div class="tier-title">CDE Health Check &amp; Strategy Roadmap</div></div>
+              <div class="tier-meta">A focused diagnostic of your CDE environment. We audit naming conventions, container codes and metadata, score compliance against ISO 19650, and deliver a remediation roadmap your team can execute against. Delivered in weeks, not quarters.</div>
+              <div class="tier-price"><span class="amount">&pound;2.5&ndash;5k</span><span class="unit">Fixed scope</span><span class="unit">Excl. VAT</span></div>
+            </a>
+            <a href="#contact" class="tier">
+              <div class="tier-num">II</div>
+              <div><div class="tier-tag">Project-based &middot; 6&ndash;16 weeks</div><div class="tier-title">Implementation, Migration &amp; Standardisation</div></div>
+              <div class="tier-meta">End-to-end builds for new CDE environments, legacy data migration with provenance preserved, metadata standardisation, and supply-chain rollout. Platform-agnostic &mdash; we&rsquo;ll meet you where your asset already lives.</div>
+              <div class="tier-price"><span class="amount">&pound;10&ndash;25k+</span><span class="unit">Project scope</span><span class="unit">Excl. VAT</span></div>
+            </a>
+            <a href="#contact" class="tier">
+              <div class="tier-num">III</div>
+              <div><div class="tier-tag">Monthly retainer &middot; 6-month minimum</div><div class="tier-title">Information Management as a Service</div></div>
+              <div class="tier-meta">Fractional Information Manager or CDE Administrator for asset owners and scaling contractors. Continuous monitoring via Awen, monthly compliance reporting, and a named point of contact. Retained capability without retained payroll.</div>
+              <div class="tier-price"><span class="amount">&pound;2.5&ndash;4k</span><span class="unit">per month</span><span class="unit">Excl. VAT</span></div>
+            </a>
+            <a href="#contact" class="tier">
+              <div class="tier-num">IV</div>
+              <div><div class="tier-tag">Advisory &middot; Project-based</div><div class="tier-title">AI Governance &amp; Readiness</div></div>
+              <div class="tier-meta">Structured advisory for construction and property sector organisations introducing AI tools into project delivery workflows. We assess governance gaps against emerging frameworks (ISO 42001, RICS guidance, BSA obligations), produce policy documentation, and advise on responsible deployment.</div>
+              <div class="tier-price"><span class="amount">&pound;3&ndash;8k</span><span class="unit">Project scope</span><span class="unit">Excl. VAT</span></div>
+            </a>
+          </div>
+          <p style="font-family:var(--mono);font-size:11px;letter-spacing:0.1em;color:var(--slate);text-transform:uppercase;padding-top:32px">
+            Fees published in good faith &middot; final scope agreed before any engagement begins.
+            All fees quoted exclusive of VAT. Sylfaen Advisory Limited is VAT registered (VRN 523 1958 92).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="awen">
+      <div class="awen">
+        <div class="awen-inner">
+          <div class="section-head">
+            <div class="eyebrow"><span class="num">03</span>Proprietary tooling</div>
+            <h2 class="section-title">Enterprise-scale outcomes <em>at boutique speed.</em></h2>
+          </div>
+          <p class="section-sub">
+            Awen is our internal data assurance platform, purpose-built for ISO 19650
+            engagements. It&rsquo;s the tooling behind every engagement we deliver &mdash; from
+            Health Check diagnostics through to retained monitoring.
+          </p>
+          <p><a href="#contact" class="btn btn-primary">Request a demo &rarr;</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-rule" id="credentials">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow"><span class="num">04</span>Credentials</div>
+          <h2 class="section-title">Why an independent practice <em>and not a Big Five team?</em></h2>
+        </div>
+        <div class="credentials">
+          <div class="cred">
+            <div class="cred-glyph">15<span class="small">+</span></div>
+            <div class="cred-title">Hands-on CDE delivery, not delegated to juniors</div>
+            <p class="cred-body">Every engagement is led by a practitioner with primary platform experience &mdash; including co-development of BCDE at Bentley Systems and delivery on schemes spanning health, infrastructure, and housebuilding.</p>
+            <ul class="cred-list"><li>Bentley BCDE</li><li>ProjectWise</li><li>Viewpoint</li><li>Asite</li><li>Autodesk Docs</li><li>Dalux</li></ul>
+          </div>
+          <div class="cred">
+            <div class="cred-glyph"><span style="font-family:var(--mono);font-style:normal;font-size:40px">ISO</span></div>
+            <div class="cred-title">19650-native &mdash; built up from the standard, not retrofitted</div>
+            <p class="cred-body">Our frameworks, templates and audit logic begin with the clause-level text of ISO 19650-1 through -5. Nothing is bolted on later because nothing was bolted on at the start.</p>
+            <ul class="cred-list"><li>ISO 19650-1:2018</li><li>-2:2018</li><li>-3:2020</li><li>-5:2020</li><li>BS 1192-4</li><li>ISO 19650:2026</li></ul>
+          </div>
+          <div class="cred">
+            <div class="cred-glyph">UK</div>
+            <div class="cred-title">Native to the UK regulatory environment</div>
+            <p class="cred-body">Building Safety Act Golden Thread, EIR &amp; BEP authoring under UK procurement norms, and the emerging ISO 19650:2026 transition. We are based in Wales and operate UK-wide.</p>
+            <ul class="cred-list"><li>BSA 2022</li><li>Golden Thread</li><li>EIR / BEP</li><li>NEC4 IM annex</li><li>JCT alignment</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-rule" id="contact">
+      <div class="wrap">
+        <div class="contact-aside">
+          <div class="eyebrow" style="margin-bottom:20px"><span class="num">05</span>Contact</div>
+          <h2 class="section-title">Begin with a <em>conversation</em> &mdash; no pitch, no commitment.</h2>
+          <p class="section-sub" style="margin-top:24px">
+            We respond to every enquiry within one business day. Initial
+            conversations are scoped at 30 minutes and held under
+            confidentiality by default.
+          </p>
+          <div class="contact-modes">
+            <a href="mailto:mark@sylfaenadvisory.co.uk" class="contact-mode">
+              <span class="ix">i.</span>
+              <span class="lbl"><span class="t">mark@sylfaenadvisory.co.uk</span><span class="s">Direct to engagement lead &middot; typical reply in &lt; 4h</span></span>
+              <span class="arr">&rarr;</span>
+            </a>
+            <a href="https://calendly.com/mark-sylfaenadvisory/30min" target="_blank" rel="noopener noreferrer" class="contact-mode">
+              <span class="ix">ii.</span>
+              <span class="lbl"><span class="t">Book a 30-minute introduction</span><span class="s">Wed &amp; Thu afternoons &middot; Teams or in-person, Cardiff / London</span></span>
+              <span class="arr">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-mono-title">Sylfaen.</div>
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Practice</h4>
+            <ul>
+              <li>Sylfaen Advisory Ltd</li>
+              <li>Construction Assurance Consultants</li>
+              <li>Wales, UK &middot; operating UK-wide</li>
+              <li>Registered in England &amp; Wales &middot; No. 17275026</li>
+              <li>VAT No. 523 1958 92</li>
+              <li>ICO Registration &middot; C1967400</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Engagements</h4>
+            <ul>
+              <li><a href="#engagements">Health Check (Tier I)</a></li>
+              <li><a href="#engagements">Implementation (Tier II)</a></li>
+              <li><a href="#engagements">Retainer (Tier III)</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Tooling</h4>
+            <ul>
+              <li><a href="#awen">Awen platform</a></li>
+              <li><a href="#awen">Request demo</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:mark@sylfaenadvisory.co.uk">mark@sylfaenadvisory.co.uk</a></li>
+              <li><a href="#contact">Engagement enquiry</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="ethical-employment-policy.html">Ethical Employment Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-meta">
+          <span>&copy; 2026 Sylfaen Advisory &middot; Wales, UK</span>
+          <span>Powered by Awen</span>
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
