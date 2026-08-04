@@ -1,5 +1,4 @@
-/* global React */
-const { useState, useEffect, useRef, useCallback } = React;
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 /* ============================================================
    Awen — Document generation workspace (interactive demo)
@@ -516,4 +515,4 @@ function AwenDashboard() {
   );
 }
 
-window.AwenDashboard = AwenDashboard;
+export default AwenDashboard;

@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Sylfaen Advisory</title>
-  <meta name="description" content="How Sylfaen Advisory Limited collects, uses and protects personal data, in line with UK GDPR. A B2B construction assurance consultancy based in Wales." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Geist:wght@300..700&family=JetBrains+Mono:ital,wght@0,400..600;1,400..600&display=swap" />
-
-  <link rel="stylesheet" href="styles.css" />
-
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout
+  title="Privacy Policy — Sylfaen Advisory"
+  description="How Sylfaen Advisory Limited collects, uses and protects personal data, in line with UK GDPR. A B2B construction assurance consultancy based in Wales."
+>
   <style>
     /* === Privacy page — scoped === */
 
@@ -196,39 +191,17 @@
 
     .legal-callout p + p { margin-top: 12px; }
   </style>
-</head>
-<body>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a href="index.html" class="wordmark">
-        <img src="assets/sylfaen-logo-mark.png" alt="" class="mark-svg" />
-        <span class="label">
-          <span>Sylfaen Advisory</span>
-          <span class="sub">Construction Assurance</span>
-        </span>
-      </a>
-      <nav class="nav-links">
-        <a href="index.html#practice"><span class="num">01</span>Practice</a>
-        <a href="index.html#engagements"><span class="num">02</span>Engagements</a>
-        <a href="index.html#awen"><span class="num">03</span>Awen</a>
-        <a href="index.html#credentials"><span class="num">04</span>Credentials</a>
-        <a href="index.html#contact"><span class="num">05</span>Contact</a>
-      </nav>
-      <div class="nav-status">
-        <span class="dot"></span>
-        Accepting Q3 ’26
-      </div>
-    </div>
-  </header>
+
+  <Nav base="/" />
 
   <section class="section hero legal-hero" id="top">
     <div class="wrap">
       <div class="hero-eyebrow">
-        <span>Legal · Data protection</span>
+        <span>Legal &middot; Data protection</span>
       </div>
       <h1 class="hero-headline">Privacy <em>Policy.</em></h1>
       <p class="hero-lead" style="margin-top: 28px; max-width: 56ch;">
-        How we collect, use and safeguard personal data — written plainly,
+        How we collect, use and safeguard personal data &mdash; written plainly,
         for the professionals and organisations we work with. We hold data
         as a <strong>foundation</strong> to be protected, not a resource to be exploited.
       </p>
@@ -268,7 +241,7 @@
             <span class="v"><a href="mailto:mark@sylfaenadvisory.co.uk">mark@sylfaenadvisory.co.uk</a></span>
           </div>
           <div class="meta-foot">
-            UK GDPR · Data Protection Act 2018 · B2B consultancy
+            UK GDPR &middot; Data Protection Act 2018 &middot; B2B consultancy
           </div>
         </aside>
 
@@ -333,7 +306,7 @@
               </p>
               <p>
                 You have the right to object to processing carried out on the basis
-                of legitimate interests at any time — see Section 07.
+                of legitimate interests at any time &mdash; see Section 07.
               </p>
             </div>
           </div>
@@ -345,7 +318,7 @@
               <li>Responding to enquiries and conversations you initiate</li>
               <li>Delivering engagements, proposals and related correspondence</li>
               <li>Maintaining records for professional indemnity purposes</li>
-              <li>Occasional, relevant contact about our practice — with a clear opt-out every time</li>
+              <li>Occasional, relevant contact about our practice &mdash; with a clear opt-out every time</li>
             </ul>
             <p>
               We do not carry out automated decision-making or profiling, and we
@@ -379,8 +352,8 @@
               operate the practice:
             </p>
             <ul class="legal-list">
-              <li><strong>HubSpot</strong> — our CRM, used to manage enquiries and relationship records, under a data processing agreement incorporating Standard Contractual Clauses</li>
-              <li><strong>Formspree</strong> — processes submissions from our enquiry form; submission data is deleted after delivery to us</li>
+              <li><strong>HubSpot</strong> &mdash; our CRM, used to manage enquiries and relationship records, under a data processing agreement incorporating Standard Contractual Clauses</li>
+              <li><strong>Formspree</strong> &mdash; processes submissions from our enquiry form; submission data is deleted after delivery to us</li>
             </ul>
             <p>
               We will disclose data to law enforcement or regulatory bodies only
@@ -393,12 +366,12 @@
             <h2>The rights you hold over your data.</h2>
             <p>Under UK GDPR you have the right to:</p>
             <ul class="legal-list">
-              <li><strong>Access</strong> — a copy of the personal data we hold about you</li>
-              <li><strong>Rectification</strong> — correction of inaccurate or incomplete data</li>
-              <li><strong>Erasure</strong> — deletion of your data where appropriate</li>
-              <li><strong>Restriction</strong> — limiting how we use your data</li>
-              <li><strong>Portability</strong> — receiving your data in a portable format</li>
-              <li><strong>Objection</strong> — objecting to processing based on legitimate interests</li>
+              <li><strong>Access</strong> &mdash; a copy of the personal data we hold about you</li>
+              <li><strong>Rectification</strong> &mdash; correction of inaccurate or incomplete data</li>
+              <li><strong>Erasure</strong> &mdash; deletion of your data where appropriate</li>
+              <li><strong>Restriction</strong> &mdash; limiting how we use your data</li>
+              <li><strong>Portability</strong> &mdash; receiving your data in a portable format</li>
+              <li><strong>Objection</strong> &mdash; objecting to processing based on legitimate interests</li>
             </ul>
             <p>
               To exercise any of these, email
@@ -411,16 +384,16 @@
             <div class="eyebrow"><span class="num">08</span>Complaints</div>
             <h2>If you are not satisfied.</h2>
             <p>
-              We would always prefer to resolve any concern with you directly — so
+              We would always prefer to resolve any concern with you directly &mdash; so
               please contact us first, and we will do our best to put it right.
             </p>
             <p>
-              You also have the right to complain to the Information Commissioner's
-              Office (ICO), the UK's data protection regulator:
+              You also have the right to complain to the Information Commissioner&rsquo;s
+              Office (ICO), the UK&rsquo;s data protection regulator:
             </p>
             <ul class="legal-list">
               <li><a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">ico.org.uk</a></li>
-              <li>Helpline — 0303 123 1113</li>
+              <li>Helpline &mdash; 0303 123 1113</li>
               <li>Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF</li>
             </ul>
           </div>
@@ -429,7 +402,7 @@
             <div class="eyebrow"><span class="num">09</span>Changes</div>
             <h2>How we keep this policy current.</h2>
             <p>
-              We may update this policy from time to time. The "last updated" date
+              We may update this policy from time to time. The &ldquo;last updated&rdquo; date
               in the sidebar always reflects the latest revision.
             </p>
             <p>
@@ -442,50 +415,5 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer-mono-title">Sylfaen.</div>
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>Practice</h4>
-          <ul>
-            <li>Sylfaen Advisory Ltd</li>
-            <li>Construction Assurance Consultants</li>
-            <li>Wales, UK · operating UK-wide</li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Engagements</h4>
-          <ul>
-            <li><a href="index.html#engagements">Health Check (Tier I)</a></li>
-            <li><a href="index.html#engagements">Implementation (Tier II)</a></li>
-            <li><a href="index.html#engagements">Retainer (Tier III)</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Tooling</h4>
-          <ul>
-            <li><a href="index.html#awen">Awen platform</a></li>
-            <li><a href="index.html#awen">Live sample workspace</a></li>
-            <li><a href="index.html#awen">Request demo</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:mark@sylfaenadvisory.co.uk">mark@sylfaenadvisory.co.uk</a></li>
-            <li><a href="index.html#contact">Engagement enquiry</a></li>
-            <li><a href="index.html#contact">Book introduction</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="ethical-employment-policy.html">Ethical Employment Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-meta">
-        <span>© 2026 Sylfaen Advisory · Wales, UK</span>
-        <span>Powered by Awen</span>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+  <Footer base="/" />
+</Layout>
